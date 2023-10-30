@@ -1,0 +1,30 @@
+<!-- <ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>tipofamilia</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content [fullscreen]="true">
+
+  <ion-button shape="round" (click)="logout()"><-</ion-button>
+  <ion-img class="img-logo" src="../../../assets/kidcashlogo.png" alt="logo"></ion-img>  
+  <div class="corpo">
+    <div class="gb">
+      <ion-button fill="outline" class="botao" [routerLink]="['/folder']">Pai</ion-button>
+      <ion-button fill="outline" class="botao" [routerLink]="['/iniciokid']">Filho</ion-button>
+      <p>Se torne um assinante premium</p>
+      <p>Nome: {{ user?.uid }}</p>
+    </div>
+    <ion-item *ngIf="listausers.length === 0">
+      <ion-label>sem registros encontrados</ion-label>
+    </ion-item>
+  </div>
+
+  <ion-item-sliding *ngFor="let use of listausers">
+    <ion-item lines="full">
+      <ion-label>{{use.id}}</ion-label>
+      <!-- Exibe o nome do produto -->
+    </ion-item>
+  </ion-item-sliding>
+
+</ion-content>

@@ -1,0 +1,64 @@
+<!-- <ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>cadastro</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content [fullscreen]="true">
+
+  <div class="cont">
+    <ion-img class="img-logo" src="../../../assets/kidcashlogo.png" alt="logo"></ion-img>
+
+    <div class="corpo">
+      <div>
+
+        <form [formGroup]="credentials" (ngSubmit)="login()">
+
+          <ion-item>
+            <ion-input type="nome" class="senha" placeholder="Nome" formControlName="nome"></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-input type="email" class="senha" placeholder="Email" formControlName="email"></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-input type="password" class="senha" placeholder="Senha" formControlName="password"></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-input type="password" class="senha" placeholder="Confirmar senha" formControlName="confsenha"></ion-input>
+          </ion-item>
+
+          <div class="botao">
+            <ion-button (click)="register(); salvar(); salve()" fill="outline" color="success">Salvar</ion-button>
+          </div>
+
+        </form>
+
+
+          <!-- <ion-item>
+            <ion-input [(ngModel)]="nome" type="text" class="senha" placeholder="Nome" value=""></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-input [(ngModel)]="email" type="email" class="senha" placeholder="Email" value=""></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-input [(ngModel)]="password" type="password" class="senha" placeholder="Senha" type="password" value=""></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-input [(ngModel)]="senhaconf" type="password" class="senha" placeholder="Confirmar senha" type="password" value=""></ion-input>
+          </ion-item>
+          <div class="botao">
+            <ion-button (click)="cadastrar" fill="outline" [routerLink]="['/home']" color="success">Salvar</ion-button>
+          </div> -->
+
+          <p class="text-cad" [routerLink]="['/home']" routerLinkActive="router-link-active">Voltar ao login</p>
+
+      </div>
+
+    </div>
+  </div>
+
+
+</ion-content>

@@ -1,0 +1,20 @@
+div {
+    margin-top: 10px;
+    height: 22vh;
+    swiper-container {
+        swiper-slide {
+            height: 22vh;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            ion-card {
+                width: 18vh;
+                height: 18vh;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }  
+        }
+    }
+}

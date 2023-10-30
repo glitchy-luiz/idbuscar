@@ -1,0 +1,64 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Home</ion-title>
+    <ion-buttons slot="end">
+      <ion-icon name="notifications-outline"></ion-icon>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Saldo da Conta</ion-card-title>
+      <ion-card-subtitle>Valor Atual</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>R$2.000</ion-card-content>
+  </ion-card>
+
+  <div class="container">
+    <div class="categorias">
+      <h3>Modo</h3>
+      <h5>Individual</h5>
+    </div>
+    <app-cards></app-cards>
+    <div class="categorias">
+      <h3>Organização</h3>
+    </div>
+
+    <div>
+        <ion-card (click)="btnClicked()" routerLink="/metas" class="redirecionador">
+          <ion-card-header>
+            <ion-icon name="disc-outline"></ion-icon>
+            <div class="cardTitulo">
+              <ion-card-title>Metas</ion-card-title>
+              <ion-card-subtitle>Need more help</ion-card-subtitle>
+            </div>
+          </ion-card-header>
+        </ion-card>
+
+        <ion-card (click)="btnClicked2()" routerLink="/deveres">
+          <ion-card-header>
+            <ion-icon name="book-outline"></ion-icon>
+            <div class="cardTitulo">
+              <ion-card-title>Deveres</ion-card-title>
+              <ion-card-subtitle>Find us all over the world</ion-card-subtitle>
+            </div>
+          </ion-card-header>
+        </ion-card>
+
+        <ion-card (click)="btnClicked3()" routerLink="/gastos">
+          <ion-card-header>
+            <ion-icon name="cash-outline"></ion-icon>
+            <div class="cardTitulo">
+              <ion-card-title>Gastos</ion-card-title>
+              <ion-card-subtitle>Find us all over the world</ion-card-subtitle>
+            </div>
+          </ion-card-header>
+        </ion-card>
+    </div>
+  </div>
+</ion-content>

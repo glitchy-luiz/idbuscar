@@ -1,0 +1,39 @@
+.cont{
+    margin-top: 15%;
+}
+.corpo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25%;
+}
+.senha{
+    max-width: 150px;
+}
+.img-logo{
+    margin-left: 15%;
+    margin-top: 20%;
+    max-width: 292px;
+    max-height: 113px;
+}
+.text-cad{
+    font-size: 12px;
+    color: darkgrey;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.botao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    margin-bottom: 100px;
+}
+ion-item{
+    min-width: 350px;
+}
+ion-button{
+    width: 150px;
+    height: 50px;
+    margin-top: 70px;
+}

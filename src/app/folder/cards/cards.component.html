@@ -1,0 +1,31 @@
+<div>
+  <swiper-container [modules]="swiperModules" 
+  [slidesPerView]="2" 
+  [initialSlide]="1"
+  [centeredSlides]="true"
+  [pagination]="{clickable: true, dynamicBullets: true}">
+    <swiper-slide>
+      <ion-card>
+        <ion-card-header class="slide">
+          <ion-card-title>Dúvidas</ion-card-title>
+        </ion-card-header>
+      </ion-card>
+    </swiper-slide>
+
+    <swiper-slide>
+      <ion-card>
+        <ion-card-header class="slide">
+          <ion-card-title>Noticias</ion-card-title>
+        </ion-card-header>
+      </ion-card>
+    </swiper-slide>
+
+    <swiper-slide>
+      <ion-card>
+        <ion-card-header class="slide">
+          <ion-card-title>Dicas</ion-card-title>
+        </ion-card-header>
+      </ion-card>
+    </swiper-slide>
+  </swiper-container>
+</div>

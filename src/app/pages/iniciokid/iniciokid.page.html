@@ -1,0 +1,22 @@
+<!-- <ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>iniciokid</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content class="ion-padding background">
+  <ion-button [routerLink]="['/tipofamilia']"><-</ion-button>
+  <ion-button id="open-modal" class="botaomodal" expand="block">Vamos começar</ion-button>
+
+  <ion-modal trigger="open-modal" [initialBreakpoint]="1" [breakpoints]="[0, 1]">
+    <ng-template>
+      <div class="block">
+        <!-- <div class="paginas"> -->
+          <ion-button class="pgbotao">Home</ion-button>
+          <ion-button class="pgbotao">Aprender +</ion-button>
+          <ion-button class="pgbotao">Configurações</ion-button>
+        <!-- </div> -->
+      </div>
+    </ng-template>
+  </ion-modal>
+</ion-content>

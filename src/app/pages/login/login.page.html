@@ -1,0 +1,62 @@
+
+<ion-content [fullscreen]="true">
+
+  <div class="cont">
+    <ion-img class="img-logo" src="../../../assets/kidcashlogo.png" alt="logo"></ion-img>
+    <div class="corpo">
+      <div>
+
+        <form [formGroup]="credentials" (ngSubmit)="login()">
+
+          <ion-item>
+            <ion-input type="email" class="senha" placeholder="Email" formControlName="email"></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-input type="password" class="senha" placeholder="Senha" formControlName="password"></ion-input>
+          </ion-item>
+
+          <div class="botao">
+            <ion-button (click)="login()" fill="outline" color="success">Entrar</ion-button>
+          </div>
+
+        </form>
+
+        <div class="infosenha">
+          <ion-checkbox labelPlacement="end" class="infos">lembrar senha</ion-checkbox>
+          <p class="infos esqueci" [routerLink]="['/recsenha']" routerLinkActive="router-link-active">Esqueci minha
+            senha</p>
+        </div>
+
+
+
+          <!-- <ion-item>
+            <ion-input [(ngModel)]="email" type="email" class="senha" placeholder="Email" value=""></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-input [(ngModel)]="password" type="password" class="senha" placeholder="Senha" type="password" value=""></ion-input>
+          </ion-item>
+          <br />
+          <div class="infosenha">
+            <ion-checkbox labelPlacement="end" class="infos">lembrar senha</ion-checkbox>
+            <p class="infos esqueci" [routerLink]="['/recsenha']" routerLinkActive="router-link-active">Esqueci minha
+              senha</p>
+          </div>
+          <div class="botao">
+            <ion-button fill="outline" (click)="entrar" [routerLink]="['/tipofamilia']" color="success" type="submit">Entrar</ion-button>
+          </div> -->
+
+
+        <div class="separator"></div>
+        <div class="cad">
+          <p class="text-cad" [routerLink]="['/cadastro']" routerLinkActive="router-link-active">
+            Não tem uma conta?</p>
+          <p class="text-cad2" [routerLink]="['/cadastro']" routerLinkActive="router-link-active">
+            Cadastre-se</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</ion-content>
